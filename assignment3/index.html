@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys Job Application</title>
+</head>
+<body>
+    <h2>Infosys Job Application</h2>
+    
+    <form action="submit_application.php" method="POST">
+        <!-- Personal Information -->
+        <h3>Personal Information</h3>
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female" required> Female
+        <input type="radio" id="other" name="gender" value="Other" required> Other<br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <!-- Educational Details -->
+        <h3>Educational Details</h3>
+        <label for="highestDegree">Highest Degree:</label><br>
+        <input type="text" id="highestDegree" name="highestDegree" required><br><br>
+
+        <label for="institution">Institution Name:</label><br>
+        <input type="text" id="institution" name="institution" required><br><br>
+
+        <label for="graduationYear">Year of Graduation:</label><br>
+        <input type="number" id="graduationYear" name="graduationYear" required><br><br>
+
+        <!-- Work Experience -->
+        <h3>Work Experience</h3>
+        <label for="currentCompany">Current Company (if any):</label><br>
+        <input type="text" id="currentCompany" name="currentCompany"><br><br>
+
+        <label for="yearsOfExperience">Years of Experience:</label><br>
+        <input type="number" id="yearsOfExperience" name="yearsOfExperience"><br><br>
+
+        <!-- Skills -->
+        <h3>Skills</h3>
+        <label for="skills">Key Skills (separate by commas):</label><br>
+        <input type="text" id="skills" name="skills" required><br><br>
+
+        <!-- Additional Information -->
+        <h3>Additional Information</h3>
+        <label for="resume">Attach Resume (PDF only):</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+
+        <label for="coverLetter">Cover Letter (Optional):</label><br>
+        <textarea id="coverLetter" name="coverLetter" rows="4"></textarea><br><br>
+
+        <!-- Consent and Submit -->
+        <label for="consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            I consent to the processing of my data as per Infosys' privacy policy.
+        </label><br><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
